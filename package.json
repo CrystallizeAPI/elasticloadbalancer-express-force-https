@@ -1,6 +1,6 @@
 {
   "name": "@crystallize/elasticbeanstalk-express-force-https",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express middleware that will do a 301 redirect if the AWS load balancer adds a x-forwarded-proto=http to the request headers",
   "files": [
     "index.js"
