@@ -12,3 +12,5 @@ function forceHttps(req, res, next) {
   }
   next();
 }
+
+module.exports = forceHttps;
