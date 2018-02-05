@@ -4,6 +4,7 @@ elasticbeanstalk-express-force-https
 
 `yarn add @crystallize/elasticbeanstalk-express-force-https`
 
-# Use
+# Usage
 
-`import forceHttps from '@crystallize/elasticbeanstalk-express-force-https';`
+`import forceHttps from '@crystallize/elasticbea**nstalk-express-force-https';`
+`app.use(forceHttps);`
