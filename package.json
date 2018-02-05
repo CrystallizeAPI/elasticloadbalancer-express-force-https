@@ -1,5 +1,5 @@
 {
-  "name": "elasticbeanstalk-express-force-https",
+  "name": "@snowball/elasticbeanstalk-express-force-https",
   "version": "1.0.0",
   "description": "Express middleware that will do a 301 redirect if the AWS load balancer adds a x-forwarded-proto=http to the request headers",
   "main": "index.js",
@@ -10,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/snowballdigital/elasticbeanstalk-express-force-https.git"
   },
-  "author": "",
+  "author": "Snowball",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/snowballdigital/elasticbeanstalk-express-force-https/issues"
   },
-  "homepage": "https://github.com/snowballdigital/elasticbeanstalk-express-force-https#readme"
+  "homepage": "https://github.com/snowballdigital/elasticbeanstalk-express-force-https#readme",
+  "keywords": [
+    "Express",
+    "Elastic",
+    "Beanstalk",
+    "AWS",
+    "HTTPS"
+  ]
 }
