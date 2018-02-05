@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Will do a 301 redirect if the AWS load balancer adds a x-forwarded-proto to the request headers
  */

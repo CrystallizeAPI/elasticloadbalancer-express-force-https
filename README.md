@@ -6,7 +6,4 @@ elasticbeanstalk-express-force-https
 
 # Use
 
-`
-import forceHttps from '@crystallize/elasticbeanstalk-express-force-https';
-
-`
+`import forceHttps from '@crystallize/elasticbeanstalk-express-force-https';`
