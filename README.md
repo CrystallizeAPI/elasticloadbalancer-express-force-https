@@ -1,10 +1,17 @@
-elasticbeanstalk-express-force-https
+> HTTPS redirect for an Express webserver running behind a Elastic Load Balancer
 
 # Install
 
-`yarn add @crystallize/elasticbeanstalk-express-force-https`
+```
+yarn add @crystallize/elasticbeanstalk-express-force-https
+```
 
 # Usage
 
-`import forceHttps from '@crystallize/elasticbea**nstalk-express-force-https';`
-`app.use(forceHttps);`
+```
+const express = require('express');
+const forceHttps = require('@crystallize/elasticbeanstalk-express-force-https');
+
+const server = express();
+server.use(forceHttps);
+```
