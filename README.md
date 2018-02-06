@@ -3,14 +3,14 @@
 # Install
 
 ```
-yarn add @crystallize/elasticbeanstalk-express-force-https
+yarn add @crystallize/elasticloadbalancer-express-force-https
 ```
 
 # Usage
 
 ```
 const express = require('express');
-const forceHttps = require('@crystallize/elasticbeanstalk-express-force-https');
+const forceHttps = require('@crystallize/elasticloadbalancer-express-force-https');
 
 const server = express();
 server.use(forceHttps);
