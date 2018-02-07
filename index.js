@@ -6,7 +6,7 @@
  * options.stripWWW: boolean
  */
 
-module.exports = function({ stripWWW = false, addWWW = false }) {
+module.exports = function({ stripWWW = false } = {}) {
   function transformHostname({ hostname }) {
     if (stripWWW && hostname.match(/^www\./)) {
       return hostname.replace(/^www\./, "");
