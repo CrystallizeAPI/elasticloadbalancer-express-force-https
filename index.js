@@ -7,19 +7,19 @@
  */
 
 module.exports = function({ stripWWW = false, addWWW = false }) {
-  function transformHost({ host }) {
-    if (stripWWW && host.match(/^www\./)) {
-      return host.replace(/^www\./, "");
+  function transformHostname({ hostname }) {
+    if (stripWWW && hostname.match(/^www\./)) {
+      return hostname.replace(/^www\./, "");
     }
-    return false;
+    return hostname;
   }
 
   return function forceHttps(req, res, next) {
     const xfp =
       req.headers["X-Forwarded-Proto"] || req.headers["x-forwarded-proto"];
-    const host = transformHost(req);
+    const hostname = transformHostname(req);
     if (xfp === "http" || host !== req.host) {
-      res.redirect(301, `https://${host}${req.url}`);
+      res.redirect(301, `https://${hostname}${req.url}`);
     } else {
       next();
     }
