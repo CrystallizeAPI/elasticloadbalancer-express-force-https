@@ -18,7 +18,7 @@ module.exports = function({ stripWWW = false, addWWW = false }) {
     const xfp =
       req.headers["X-Forwarded-Proto"] || req.headers["x-forwarded-proto"];
     const hostname = transformHostname(req);
-    if (xfp === "http" || host !== req.host) {
+    if (xfp === "http" || hostname !== req.hostname) {
       res.redirect(301, `https://${hostname}${req.url}`);
     } else {
       next();
