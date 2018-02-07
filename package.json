@@ -5,7 +5,7 @@
     "Express middleware that will do a 301 redirect if the Elastic Load Balancer adds a x-forwarded-proto=http to the request headers",
   "files": ["index.js"],
   "engines": {
-    "node": ">=4"
+    "node": ">=7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
