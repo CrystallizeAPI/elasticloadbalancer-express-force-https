@@ -7,7 +7,7 @@
  */
 
 module.exports = function({ stripWWW = false } = {}) {
-  function transformHostname({ hostname }) {
+  function transformHostname({ hostname = "" }) {
     if (stripWWW && hostname.match(/^www\./)) {
       return hostname.replace(/^www\./, "");
     }
