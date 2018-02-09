@@ -7,11 +7,12 @@
  */
 
 module.exports = function({ stripWWW = false } = {}) {
-  function transformHostname({ hostname = "" }) {
-    if (stripWWW && hostname.match(/^www\./)) {
-      return hostname.replace(/^www\./, "");
+  function transformHostname(req) {
+    const name = (req || {}).hostname || "";
+    if (stripWWW && name.match(/^www\./)) {
+      return name.replace(/^www\./, "");
     }
-    return hostname;
+    return name;
   }
 
   return function forceHttps(req, res, next) {
