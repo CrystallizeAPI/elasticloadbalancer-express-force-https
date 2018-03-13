@@ -25,3 +25,9 @@ Pass an optional options object if needed
 Optional
 
 Strip the leading www. from the host for both https and http requests
+
+### enforceHostname (string)
+
+Optional
+
+Redirect to a given hostname

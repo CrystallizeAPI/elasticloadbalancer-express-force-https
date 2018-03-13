@@ -6,13 +6,18 @@
  * options.stripWWW: boolean
  */
 
-module.exports = function({ stripWWW = false } = {}) {
+module.exports = function({ stripWWW = false, enforceHostname = "" } = {}) {
   function transformHostname(req) {
-    const name = (req || {}).hostname || "";
-    if (stripWWW && name.match(/^www\./)) {
-      return name.replace(/^www\./, "");
+    let hostname = req.hostname || "";
+    if (stripWWW && hostname.match(/^www\./)) {
+      hostname = hostname.replace(/^www\./, "");
     }
-    return name;
+
+    if (enforceHostname && hostname !== enforceHostname) {
+      hostname = enforceHostname;
+    }
+
+    return hostname;
   }
 
   return function forceHttps(req, res, next) {
