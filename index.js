@@ -6,15 +6,16 @@
  * options.stripWWW: boolean
  */
 
-module.exports = function({ stripWWW = false, enforceHostname = "" } = {}) {
+module.exports = function({ stripWWW = false, redirectHostnames = {} } = {}) {
   function transformHostname(req) {
     let hostname = req.hostname || "";
     if (stripWWW && hostname.match(/^www\./)) {
       hostname = hostname.replace(/^www\./, "");
     }
 
-    if (enforceHostname && hostname !== enforceHostname) {
-      hostname = enforceHostname;
+    const redirectToHostname = redirectHostnames[hostname];
+    if (redirectToHostname && redirectToHostname !== hostname) {
+      hostname = redirectToHostname;
     }
 
     return hostname;

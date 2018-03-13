@@ -26,8 +26,14 @@ Optional
 
 Strip the leading www. from the host for both https and http requests
 
-### enforceHostname (string)
+### redirectHostnames (object(from (string), to (string)))
 
 Optional
 
-Redirect to a given hostname
+Redirect to a given hostname. Example from old-site.com to new-site.com:
+
+```
+redirectHostnames: {
+    'old-site.com': 'new-site.com'
+}
+```
