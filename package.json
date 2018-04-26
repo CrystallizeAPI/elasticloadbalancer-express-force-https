@@ -1,10 +1,10 @@
 {
   "name": "@crystallize/elasticloadbalancer-express-force-https",
   "version": "2.2.0",
-  "description": "Express middleware that will do a 301 redirect if the Elastic Load Balancer adds a x-forwarded-proto=http to the request headers",
-  "files": [
-    "index.js"
-  ],
+  "description":
+    "Express middleware that will do a 301 redirect if the Elastic Load Balancer adds a x-forwarded-proto=http to the request headers",
+  "license": "MIT",
+  "files": ["index.js"],
   "engines": {
     "node": ">=7"
   },
@@ -12,11 +12,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Snowball",
-  "license": "ISC",
-  "keywords": [
-    "Express",
-    "Elastic Load Balancer",
-    "AWS",
-    "HTTPS"
-  ]
+  "keywords": ["Express", "Elastic Load Balancer", "AWS", "HTTPS"]
 }
