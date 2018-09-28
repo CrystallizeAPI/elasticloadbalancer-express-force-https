@@ -1,4 +1,6 @@
-> HTTPS redirect for an Express webserver running behind a Elastic Load Balancer
+![alt text](https://raw.githubusercontent.com/snowballdigital/elasticbeanstalk-express-force-https/HEAD/media/logo.png 'Abstract node with arms')
+
+# HTTPS redirect for an Express webserver running behind a Elastic Load Balancer
 
 ## Install
 
