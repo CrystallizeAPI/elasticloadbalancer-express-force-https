@@ -9,6 +9,10 @@
   "engines": {
     "node": ">=7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CrystallizeAPI/elasticloadbalancer-express-force-https.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
