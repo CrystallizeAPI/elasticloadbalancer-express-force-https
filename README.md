@@ -2,6 +2,8 @@
 
 # HTTPS redirect for an Express webserver running behind a Elastic Load Balancer
 
+This package makes it easy to force HTTPS using Express. Since [HTTPS is faster than HTTP](https://snowball.digital/blog/https-is-faster-than-http). The package is generic but was built for the [Crystallize React Commerce boilerplate](https://crystallize.com/developers).
+
 ## Install
 
 ```
