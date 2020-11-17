@@ -16,11 +16,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Snowball",
+  "author": "Crystallize <hello@crystallize.com>",
   "keywords": [
     "Express",
     "Elastic Load Balancer",
     "AWS",
-    "HTTPS"
+    "HTTPS",
+    "node.js"
   ]
 }
